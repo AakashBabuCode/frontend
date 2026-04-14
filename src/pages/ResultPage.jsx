@@ -1,5 +1,5 @@
 import { useState } from "react";
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL + "/api";
 
 // ── Loan type info for the popup modal ──────────────────────────────────────
 const LOAN_INFO = {

@@ -119,7 +119,7 @@ export function AboutPage() {
   // ContactPage.jsx
   // ═══════════════════════════════════════════════════════════
   import { useState } from "react";
-  const API = "http://localhost:5000/api";
+  const API = import.meta.env.VITE_API_URL + "/api";
   
   export function ContactPage({ showToast }) {
     const [form, setForm] = useState({name:"",email:"",phone:"",subject:"",message:""});
