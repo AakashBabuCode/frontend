@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL + "/api";
 
 const STEP_META = [
   { icon:"fa-user-check",    label:"Identity Verification",  desc:"Validating KYC & PAN/Aadhaar details",      color:"#dbeafe", ic:"#1d4ed8" },
